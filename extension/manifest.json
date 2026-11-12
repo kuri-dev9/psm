@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "업무등록 도우미",
+  "version": "0.3.13",
+  "description": "업무기록(Timesheet)에서 MM 비율대로 근무시간을 계획하고 저장합니다.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://hr-report.linkaidata.com/r/*"
+      ],
+      "js": [
+        "core.js",
+        "panel.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "업무등록 도우미",
+    "default_popup": "popup.html"
+  }
+}

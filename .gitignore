@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# 배포용 묶음 (필요할 때 extension/ 에서 다시 만든다)
+*.zip
+
+# 편집기·도구
+.vscode/
+.idea/
+node_modules/
